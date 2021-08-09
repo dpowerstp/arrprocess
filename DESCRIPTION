@@ -1,16 +1,21 @@
-Package: policefuncts
-Title: What the Package Does (One Line, Title Case)
+Package: arrprocess
+Title: Recode/Analyze Takoma Park PD Data
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Dan",
+           family = "Powers",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "danielp@takomaparkmd.gov",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Packages for working with/analyzing Takoma Park PD data.
+URL: https://github.com/dpowerstp/arrprocess
+BugReports: https://github.com/dpowerstp/arrprocess/issues
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    danfuncts,
+    dplyr,
+    purrr
