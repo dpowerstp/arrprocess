@@ -1,6 +1,7 @@
 #' function to re-factor anonymous officer values by values present in given dataset
 #'
 #' @param df df with officer_anon and officer_order columns
+#' @param officer_anon_df df with officer information
 #'
 #' @return df with officer names ordered by order
 #' @export

@@ -3,6 +3,7 @@
 #' Recodes numeric age value to age range
 #'
 #' @param num a numeric age value
+#' @param traffic Whether working with traffic stops data or other datasets
 #'
 #' @return string
 #' @export

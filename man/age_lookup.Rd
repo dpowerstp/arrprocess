@@ -8,6 +8,8 @@ age_lookup(num, traffic = T)
 }
 \arguments{
 \item{num}{a numeric age value}
+
+\item{traffic}{Whether working with traffic stops data or other datasets}
 }
 \value{
 string

@@ -15,6 +15,8 @@ race_prep(
 \item{df}{a stops or arrests dataframe with a race column}
 
 \item{race_col}{a column for race/ethnicity values in the arrest/stops dataframe}
+
+\item{race_vector_order}{character vector of how to order race-values appearing in dataframe in visualizations}
 }
 \value{
 df with race column ordered as factor

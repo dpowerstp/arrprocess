@@ -4,6 +4,7 @@
 #'
 #' @param df a stops or arrests dataframe with a race column
 #' @param race_col a column for race/ethnicity values in the arrest/stops dataframe
+#' @param race_vector_order character vector of how to order race-values appearing in dataframe in visualizations
 #'
 #' @return df with race column ordered as factor
 #' @export

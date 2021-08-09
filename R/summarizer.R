@@ -27,7 +27,7 @@ summarizer <- function(df, group_cols, output_prefixs){
       dplyr::mutate(total = n()) %>%
       dplyr::group_by(.data[[group_cols]], total) %>%
       dplyr::summarize(!!sym(num_col) := n(),
-                       !!sym(pct_col) := danfuncts::pct_round(!!sym(num_col), total)) %>%
+                       !!sym(pct_col) := tpfuncts::pct_round(!!sym(num_col), total)) %>%
       dplyr::distinct()
   }
 
@@ -72,7 +72,7 @@ summarizer <- function(df, group_cols, output_prefixs){
           # dplyr::ungroup %>%
           dplyr::group_by(across(group_sub)) %>%
           dplyr::mutate(newtotal = n(),
-                        !!sym(pct_col) := danfuncts::pct_round(newtotal, grouptotal))
+                        !!sym(pct_col) := tpfuncts::pct_round(newtotal, grouptotal))
 
         # rename group total to new total - so newtotal becomes denominator in next group, and overall total assigned to new column
         output <<- output %>%
@@ -99,7 +99,7 @@ summarizer <- function(df, group_cols, output_prefixs){
           # preserve subtotals and percents created before, and calculate final totals
           dplyr::group_by(across(group_sub), grouptotal, dplyr::across(cols_list)) %>%
           dplyr::summarise(!!sym(new_num_col) := n(),
-                           !!sym(pct_col) := danfuncts::pct_round(!!sym(new_num_col), grouptotal)) %>%
+                           !!sym(pct_col) := tpfuncts::pct_round(!!sym(new_num_col), grouptotal)) %>%
           dplyr::distinct()
 
         # rename group total to new total

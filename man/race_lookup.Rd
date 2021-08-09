@@ -4,10 +4,12 @@
 \alias{race_lookup}
 \title{Function to convert ACS races to police-tracked races}
 \usage{
-race_lookup(string, traffic = T)
+race_lookup(string, type = "traffic")
 }
 \arguments{
 \item{string}{representing acs races}
+
+\item{type}{Either retention, matching ACS values to city's HR demographic categories, or traffic, matching ACS values to police-data race values}
 }
 \value{
 recoded string

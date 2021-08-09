@@ -15,6 +15,8 @@ ward_prep(
 \item{df}{a stops or arrests dataframe with a ward column}
 
 \item{ward_col}{a column for ward values in the arrest/stops dataframe}
+
+\item{ward_vector_order}{character vector of how to order wards in visualizations/charts}
 }
 \value{
 df with race column ordered as factor

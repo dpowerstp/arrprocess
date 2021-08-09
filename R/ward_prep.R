@@ -4,6 +4,7 @@
 #'
 #' @param df a stops or arrests dataframe with a ward column
 #' @param ward_col a column for ward values in the arrest/stops dataframe
+#' @param ward_vector_order character vector of how to order wards in visualizations/charts
 #'
 #' @return df with race column ordered as factor
 #' @export

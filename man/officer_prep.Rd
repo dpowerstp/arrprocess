@@ -4,10 +4,12 @@
 \alias{officer_prep}
 \title{function to re-factor anonymous officer values by values present in given dataset}
 \usage{
-officer_prep(df)
+officer_prep(df, officer_anon_df)
 }
 \arguments{
 \item{df}{df with officer_anon and officer_order columns}
+
+\item{officer_anon_df}{df with officer information}
 }
 \value{
 df with officer names ordered by order

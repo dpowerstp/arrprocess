@@ -7,9 +7,9 @@
 summarizer(df, group_cols, output_prefixs)
 }
 \arguments{
-\item{df}{Data-frame with each row corresponding to an observation you want counted by group.}
+\item{df}{Data-frame with each row corresponding to an observation you want counted by groups.}
 
-\item{group_cols}{Data-masked list of columns to group the dataframe by, in order of order you want the grouping done.}
+\item{group_cols}{Character-vector of columns to group the dataframe by, in order of order you want the grouping done.}
 
 \item{output_prefixs}{Character-vector of equal length as the group_cols with prefixes for output columns corresponding to each group_col; e.g., "type" if you're grouping by type will produce type_num and type_pct.}
 }
